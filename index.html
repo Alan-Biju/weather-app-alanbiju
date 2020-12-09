@@ -1,0 +1,119 @@
+
+<html>
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <head>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="sky-layer"></div>
+      <div class="clouds">
+        <div class="cloud top"></div>
+        <div class="cloud"></div>
+        <div class="cloud bottom"></div>
+      </div>
+      <div class="clouds cloud-overlay">
+        <div class="cloud top"></div>
+        <div class="cloud"></div>
+        <div class="cloud bottom"></div>
+      </div>
+      <div class="mountains">
+        <div class="mountain left"></div>
+        <div class="mountain center"></div>
+        <div class="mountain right"></div>
+      </div>
+      <div class="sun">
+        <div class="sun-container"></div>
+      </div>
+      <div class="moon">
+        <div class="moon-container"></div>
+      </div>
+    </div>
+
+    <div class="box">
+            <div class="head">
+              <div class="city_box">
+                <div class="city"> 
+                      <h1 id="city_name">Shimoga </h1>
+                      <img src="https://img.icons8.com/pastel-glyph/64/ffffff/location-update--v2.png"/>
+                </div>
+                <div class="lat_lon">
+                  <p class="lat">72.555</p>
+                  <p class="long">89.555</p>
+                </div>
+              </div>
+                        <div class="input">
+                          <label for="search">Search : </label>
+                          <input type="text" name="search" id="search">
+                        </div>
+            </div>
+
+<div class="weather">
+
+<div class="icon">
+  <img  class="icon_weather">
+<div class="icon_text">
+  <h1 id="description">clear sky</h1>
+<div class="sun_details">
+  <div class="sun_up sun">
+    <p>Sunrise :</p>
+    <p id="timeup">6:55:43 AM </p>
+  </div>
+  <div class="sun_down sun">
+    <p>Sunset :</p>
+    <p id ='timedown'> 6:56:36 AM</p>
+  </div>
+</div>
+</div>
+
+</div>
+<div class="details">
+  <div class="temp">
+    <p id="temp_no">72</p>
+  </div>
+  <div class="extra_info">
+    <div class="pressure info">
+      <img src="icons/pressure.png" alt="hpa" >
+      <p id="pressure_no">1023</p>
+    </div>
+    <div class="humidity info">
+      <img src="icons/wet.png" alt="water" >
+      <p id="humidity_no">100</p>
+    </div>
+    <div class="speed info">
+      <img src="icons/wind.png" alt="woof" >
+      <p id="wind_no">1.5</p>
+    </div>
+
+  </div>
+</div>
+
+</div>
+<div class="down_info">
+  <div class="sec"><div class="sea data">
+    <p>Sea Level:</p>
+    <p>1515</p>
+  </div>
+  <div class="wind_deg data">
+    <p >Wind Deg :</p>
+    <p id="deg"> 135</p>
+  </div></div>
+  <div class="sec"><div class="maxtemp data">
+    <p>Temp-Max :</p>
+    <p id="max"> 135.66</p>
+    </div>
+    <div class="mintemp data">
+      <p>Temp-Min :</p>
+      <p id="min"> 135.66</p>
+      </div>
+  </div>
+
+
+</div>
+
+    </div>
+<script src="app.js"> </script>
+  </body>
+</html>
