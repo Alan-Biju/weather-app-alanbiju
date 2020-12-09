@@ -91,7 +91,7 @@ search.addEventListener('keyup'||'click',(e)=>{
 
   if(e.keyCode==13){
     const  city=search.value;
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api}`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api}`)
     .then(res=>res.json())
     .then(data=>
         {
