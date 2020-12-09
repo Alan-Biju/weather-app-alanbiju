@@ -25,7 +25,7 @@ if(navigator.geolocation){
     navigator.geolocation.getCurrentPosition((position)=>{
 long = position.coords.longitude;
 lat=position.coords.latitude;
-fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${api}`)
+fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${api}`)
 .then(res=>res.json())
 .then(data=>
     {
