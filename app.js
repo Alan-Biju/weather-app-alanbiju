@@ -46,7 +46,7 @@ function send(data){
     city.innerHTML = data.name;
     latitude.innerText = "Lat : " + data.coord.lat||0;
     longitude.innerHTML ="Long :" + data.coord.lon||0;
-   weather_icon.src=`https://openweathermap.org/img/w/${data.weather[0].icon|}.png`;
+   weather_icon.src=`https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     description.innerHTML=data.weather[0].description;
     temp.innerHTML=parseInt((data.main.temp)-273.15);
     pressure.innerHTML=data.main.pressure;
