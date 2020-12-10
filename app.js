@@ -31,9 +31,10 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&ap
     {
         send(data);
         timeup(data.sys.sunrise);
+    search.value='';
     }
     
- );
+ ).catch(err=>{alert("city not found")});
     });
 }
 
@@ -97,6 +98,7 @@ search.addEventListener('keyup'||'click',(e)=>{
         {
             send(data);
             timeup(data.sys.sunrise);
+        search.value='';
           
         }).catch(err=>{alert("city not found")})
   }
